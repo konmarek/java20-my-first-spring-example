@@ -36,7 +36,7 @@ public class StreamCalculations {
                 .count();
         //TODO: use full force of reduce
     }
-
+// randomowy komentarz, sprawdzam gita
     static class Acumulator{
         int numberOfElements;
         int sum;
