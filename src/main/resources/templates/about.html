@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>witam to jest stronka o mnie, zostaw lajka (((((((:</h1>
+    <h4>jestem hakerem</h4>
+
+    <p th:text="'Moja fura to ' + ${hMarka} + ' ' +
+    ${hModel} + ' ' + ${hMilage} + ' ' + 'wiozę się pomału'"></p>
+    <p th:text="${hMarka}">Dżem</p>
+    <p th:text="${hModel}">dobry</p>
+    <p th:text="${hMilage}">dobry</p>
+</body>
+</html>

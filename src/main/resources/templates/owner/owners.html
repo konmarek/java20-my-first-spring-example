@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Posiadacze</title>
+</head>
+<body>
+
+<table>
+    <thead>
+    <tr>
+        <th>Owner - ksywa</th>
+        <th>Pet - rodzaj</th>
+        <th>Pet - imie</th>
+        <th>pokaż zwierza</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- for (Owner zmiennaIteracjiL posiadacze)-->
+    <tr th:each="zmiennaIteracji : ${posiadacze}">
+        <td th:text="${zmiennaIteracji.nick}">pszemek</td>
+        <td th:text="${zmiennaIteracji.pet.kind}">ryba</td>
+        <td th:text="${zmiennaIteracji.pet.name}">Nemo</td>
+        <td><a href="http://www.onet.pl" th:href="'/pets/pet/' + ${zmiennaIteracji.pet.id}">poka sowę</a> </td>
+    </tr>
+    </tbody>
+</table>
+<p>Dodajemy nowego <a href="#" th:href="@{/owner/new-owner-form}">Ownera</a></p>
+
+</body>
+</html>

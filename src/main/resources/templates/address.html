@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>moj adres</title>
+</head>
+<body>
+    <p th:text="'Miejscowosc: ' + ${mojAdres.city}">Marki</p>
+    <p th:text="'Ulica: ' + ${mojAdres.street}">ul. Warszawska</p>
+    <p th:text="'Kod pocztowy: ' + ${mojAdres.postalCode}">66-666</p>
+</body>
+</html>
